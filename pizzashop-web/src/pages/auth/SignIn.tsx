@@ -15,7 +15,6 @@ type SignInForm = z.infer<typeof signInForm>
 export function SignIn() {
   const { register, handleSubmit, formState: { isSubmitting } } = useForm<SignInForm>()
 
-
   async function handleSignIn(data: SignInForm) {
     console.log(data)
 
